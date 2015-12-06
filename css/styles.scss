@@ -9,45 +9,6 @@ body {
 	font-family: 'Poiret One';
 }
 
-// nav{
-// 	width: 100%;
-// 	text-align: right;
-// 	background-color: $white;
-// 	position: static;
-
-// 	ul {
-// 		padding: 2em;
-// 		margin-right: 75px;
-// 		margin-bottom: 0;
-		
-// 		li {
-// 			display: inline-block;
-// 			list-style-type: none;
-// 			font-size: 1.2em;
-// 			margin-left: 2em;
-// 		}
-
-// 		#logo {
-// 			float: left;
-// 			color: $light-blue;
-// 			margin-left: 75px;
-// 		}
-
-// 		li a {
-// 			color: $light-blue;
-// 		}
-
-// 		li a:hover {
-// 			text-decoration: underline;
-// 			color: $light-blue;
-// 		}
-// 	}
-// }
-
-.display {
-	z-index: 1000;
-}
-
 #icon {
 	margin-left: 50px;
 	margin-top: 20px;
@@ -58,18 +19,21 @@ body {
 }
 
 nav {
+  z-index: 1001;
 	display: none;
 	float: right;
 	width: 200px;
-	height: 740px;
-	text-align: left;
+	height: 100vh;
+	text-align: center;
 	background-color: $light-blue;
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
 
 	ul {
+    z-index: 1001;
 		padding-left: 0;
 
 		li {
+      z-index: 1001;
 			list-style-type: none;
 			margin-top: 1.5em;
 			padding: 1em;
@@ -91,7 +55,7 @@ nav {
 .nav2 {
   float: right;
   width: 200px;
-  height: 750px;
+  height: 100vh;
   text-align: left;
   background-color: $light-blue;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
@@ -122,10 +86,15 @@ nav {
 	height: 150px;;
 }
 
+#spacer2 {
+  height: 50px;;
+}
+
 #index-description {
 	width: 100%;
 	color: $orange;
 	position: absolute;
+
 
 	h1 {
 		background: -webkit-linear-gradient($orange, #333, $light-blue);
@@ -146,14 +115,56 @@ nav {
 }
 
 //about page
-.about-page {
-	width: 72%;
+.about-page, .nicholas, .projects {
+	width: 85%;
 	font-size: 1.5em;
 	padding-left: 50px;
 	margin-top: 2em;
 
 }
 
+//nicholas information
+.nicholas {
+
+  #myPic {
+    width: 30%;
+    float: left;
+    border-radius: 25px;
+    padding: .5em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+
+  ul li {
+    list-style-type: none;
+    display: inline-block;
+  }
+}
+
+// projects page
+.projects {
+  
+  #theTable {
+    width: 100%;
+    margin-top: 1em;
+  }  
+
+  .theHead {
+    text-decoration: underline;
+  }
+}
+
+// contact page
+
+.contact-page{
+  text-align: center;
+  font-size: 1.5em;
+
+  h1 {
+    text-decoration: underline;
+    padding-bottom: 1em;
+  }
+}
 
 // spinning circle effect
 .hoja {
@@ -162,7 +173,8 @@ nav {
   top: 75%;
   left: 50%;
   margin-left: -140px;
-  margin-top: -140px;
+  // margin-top: -140px;
+  margin-top: 200px;
   width: 200px;
   height: 200px;
   text-align: center;
