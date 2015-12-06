@@ -61,7 +61,7 @@ nav {
 	display: none;
 	float: right;
 	width: 200px;
-	height: 750px;
+	height: 740px;
 	text-align: left;
 	background-color: $light-blue;
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
@@ -86,6 +86,36 @@ nav {
 			color: $white;
 		}
 	}
+}
+
+.nav2 {
+  float: right;
+  width: 200px;
+  height: 750px;
+  text-align: left;
+  background-color: $light-blue;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+
+  ul {
+    padding-left: 0;
+
+    li {
+      list-style-type: none;
+      margin-top: 1.5em;
+      padding: 1em;
+      border-bottom: 1px solid $white;
+      font-size: 1.2em;
+    }
+
+    li a {
+      color: $white;
+    }
+
+    li a:hover {
+      text-decoration: underline;
+      color: $white;
+    }
+  }
 }
 
 #spacer1 {
@@ -119,7 +149,6 @@ nav {
 .about-page {
 	width: 72%;
 	font-size: 1.5em;
-	position: absolute;
 	padding-left: 50px;
 	margin-top: 2em;
 

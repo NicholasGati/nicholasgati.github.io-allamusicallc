@@ -16,7 +16,7 @@ nav {
   display: none;
   float: right;
   width: 200px;
-  height: 750px;
+  height: 740px;
   text-align: left;
   background-color: #68A3C2;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.9); }
@@ -31,6 +31,27 @@ nav {
     nav ul li a {
       color: #FFFFFF; }
     nav ul li a:hover {
+      text-decoration: underline;
+      color: #FFFFFF; }
+
+.nav2 {
+  float: right;
+  width: 200px;
+  height: 750px;
+  text-align: left;
+  background-color: #68A3C2;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.9); }
+  .nav2 ul {
+    padding-left: 0; }
+    .nav2 ul li {
+      list-style-type: none;
+      margin-top: 1.5em;
+      padding: 1em;
+      border-bottom: 1px solid #FFFFFF;
+      font-size: 1.2em; }
+    .nav2 ul li a {
+      color: #FFFFFF; }
+    .nav2 ul li a:hover {
       text-decoration: underline;
       color: #FFFFFF; }
 
@@ -58,7 +79,6 @@ nav {
 .about-page {
   width: 72%;
   font-size: 1.5em;
-  position: absolute;
   padding-left: 50px;
   margin-top: 2em; }
 
