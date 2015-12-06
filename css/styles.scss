@@ -7,6 +7,10 @@ body {
 	margin: 0;
 	background-color: $white;
 	font-family: 'Poiret One';
+
+  h1 {
+    color: $light-blue;
+  }
 }
 
 #icon {
@@ -16,15 +20,20 @@ body {
 	&:hover {
 		cursor: pointer;
 	}
+
+  &:active {
+    width: 38px;
+  }
 }
 
+//navigation
 nav {
-  z-index: 1001;
-	display: none;
-	float: right;
+  display: none;
 	width: 200px;
 	height: 100vh;
-	text-align: center;
+  z-index: 1001;
+  float: right;
+	text-align: left;
 	background-color: $light-blue;
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
 
@@ -82,14 +91,16 @@ nav {
   }
 }
 
+//spacers
 #spacer1 {
 	height: 150px;;
 }
 
 #spacer2 {
-  height: 50px;;
+  height: 30px;;
 }
 
+//index page
 #index-description {
 	width: 100%;
 	color: $orange;
@@ -101,8 +112,8 @@ nav {
 	  -webkit-background-clip: text;
 	  -webkit-text-fill-color: transparent;
 		text-align: center;
-		font-size: 5em;
-		padding: .1em;
+		font-size: 5.5em;
+		padding: 0.1em;
 	}
 
 	p {
@@ -127,7 +138,7 @@ nav {
 .nicholas {
 
   #myPic {
-    width: 30%;
+    width: 25%;
     float: left;
     border-radius: 25px;
     padding: .5em;
@@ -143,14 +154,31 @@ nav {
 
 // projects page
 .projects {
+  height: 650px;
+  overflow: scroll;
+
   
   #theTable {
-    width: 100%;
+    width: 97%;
     margin-top: 1em;
   }  
 
   .theHead {
     text-decoration: underline;
+  }
+
+  .theData {
+   width: 300px;
+   padding-right: 1em;
+   padding-bottom: 0.7em;
+
+   &:nth-child(2) {
+    width: 150px;
+   }
+
+   &:nth-child(3) {
+    width: 150px;
+   }
   }
 }
 

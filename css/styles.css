@@ -2,20 +2,24 @@ body {
   margin: 0;
   background-color: #FFFFFF;
   font-family: 'Poiret One'; }
+  body h1 {
+    color: #68A3C2; }
 
 #icon {
   margin-left: 50px;
   margin-top: 20px; }
   #icon:hover {
     cursor: pointer; }
+  #icon:active {
+    width: 38px; }
 
 nav {
-  z-index: 1001;
   display: none;
-  float: right;
   width: 200px;
   height: 100vh;
-  text-align: center;
+  z-index: 1001;
+  float: right;
+  text-align: left;
   background-color: #68A3C2;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.9); }
   nav ul {
@@ -59,7 +63,7 @@ nav {
   height: 150px; }
 
 #spacer2 {
-  height: 50px; }
+  height: 30px; }
 
 #index-description {
   width: 100%;
@@ -70,8 +74,8 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: 5em;
-    padding: .1em; }
+    font-size: 5.5em;
+    padding: 0.1em; }
   #index-description p {
     background: -webkit-linear-gradient(#F58A2D, #333, #68A3C2);
     -webkit-background-clip: text;
@@ -86,7 +90,7 @@ nav {
   margin-top: 2em; }
 
 .nicholas #myPic {
-  width: 30%;
+  width: 25%;
   float: left;
   border-radius: 25px;
   padding: .5em;
@@ -96,11 +100,22 @@ nav {
   list-style-type: none;
   display: inline-block; }
 
-.projects #theTable {
-  width: 100%;
-  margin-top: 1em; }
-.projects .theHead {
-  text-decoration: underline; }
+.projects {
+  height: 650px;
+  overflow: scroll; }
+  .projects #theTable {
+    width: 97%;
+    margin-top: 1em; }
+  .projects .theHead {
+    text-decoration: underline; }
+  .projects .theData {
+    width: 300px;
+    padding-right: 1em;
+    padding-bottom: 0.7em; }
+    .projects .theData:nth-child(2) {
+      width: 150px; }
+    .projects .theData:nth-child(3) {
+      width: 150px; }
 
 .contact-page {
   text-align: center;
