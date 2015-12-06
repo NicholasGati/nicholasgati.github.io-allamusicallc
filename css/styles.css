@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  font-family: 'Poiret One'; }
+
+.display {
+  z-index: 1000; }
+
+#icon {
+  margin-left: 50px;
+  margin-top: 20px; }
+  #icon:hover {
+    cursor: pointer; }
+
+nav {
+  display: none;
+  float: right;
+  width: 200px;
+  height: 750px;
+  text-align: left;
+  background-color: #68A3C2;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.9); }
+  nav ul {
+    padding-left: 0; }
+    nav ul li {
+      list-style-type: none;
+      margin-top: 1.5em;
+      padding: 1em;
+      border-bottom: 1px solid #FFFFFF;
+      font-size: 1.2em; }
+    nav ul li a {
+      color: #FFFFFF; }
+    nav ul li a:hover {
+      text-decoration: underline;
+      color: #FFFFFF; }
+
+#spacer1 {
+  height: 150px; }
+
+#index-description {
+  width: 100%;
+  color: #F58A2D;
+  position: absolute; }
+  #index-description h1 {
+    background: -webkit-linear-gradient(#F58A2D, #333, #68A3C2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 5em;
+    padding: .1em; }
+  #index-description p {
+    background: -webkit-linear-gradient(#F58A2D, #333, #68A3C2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 2em; }
+
+.about-page {
+  width: 72%;
+  font-size: 1.5em;
+  position: absolute;
+  padding-left: 50px;
+  margin-top: 2em; }
+
+.hoja {
+  color: #dcdce2;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  margin-left: -140px;
+  margin-top: -140px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+  line-height: 280px;
+  -webkit-font-smoothing: antialiased; }
+  .hoja h1 {
+    padding-top: 60px;
+    cursor: pointer; }
+
+.hoja:after, .hoja:before {
+  content: "";
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center; }
+
+.hoja:after {
+  box-shadow: inset 0 17.5px 0 rgba(250, 250, 0, 0.6), inset 17.5px 0 0 rgba(250, 200, 0, 0.6), inset 0 -17.5px 0 rgba(250, 150, 0, 0.6), inset -17.5px 0 0 rgba(250, 100, 0, 0.6);
+  -webkit-animation: rotar 2s -0.5s linear infinite;
+  animation: rotar 2s -0.5s linear infinite; }
+
+.hoja:before {
+  box-shadow: inset 0 17.5px 0 rgba(0, 250, 250, 0.6), inset 17.5px 0 0 rgba(0, 200, 200, 0.6), inset 0 -17.5px 0 rgba(0, 150, 200, 0.6), inset -17.5px 0 0 rgba(0, 200, 250, 0.6);
+  -webkit-animation: rotarIz 2s -0.5s linear infinite;
+  animation: rotarIz 2s -0.5s linear infinite; }
+
+@-webkit-keyframes rotar {
+  0% {
+    -webkit-transform: rotateZ(0deg) scaleX(1) scaleY(1);
+    transform: rotateZ(0deg) scaleX(1) scaleY(1); }
+  50% {
+    -webkit-transform: rotateZ(180deg) scaleX(0.82) scaleY(0.95);
+    transform: rotateZ(180deg) scaleX(0.82) scaleY(0.95); }
+  100% {
+    -webkit-transform: rotateZ(360deg) scaleX(1) scaleY(1);
+    transform: rotateZ(360deg) scaleX(1) scaleY(1); } }
+@keyframes rotar {
+  0% {
+    -webkit-transform: rotateZ(0deg) scaleX(1) scaleY(1);
+    transform: rotateZ(0deg) scaleX(1) scaleY(1); }
+  50% {
+    -webkit-transform: rotateZ(180deg) scaleX(0.82) scaleY(0.95);
+    transform: rotateZ(180deg) scaleX(0.82) scaleY(0.95); }
+  100% {
+    -webkit-transform: rotateZ(360deg) scaleX(1) scaleY(1);
+    transform: rotateZ(360deg) scaleX(1) scaleY(1); } }
+@-webkit-keyframes rotarIz {
+  0% {
+    -webkit-transform: rotateZ(0deg) scaleX(1) scaleY(1);
+    transform: rotateZ(0deg) scaleX(1) scaleY(1); }
+  50% {
+    -webkit-transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);
+    transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85); }
+  100% {
+    -webkit-transform: rotateZ(-360deg) scaleX(1) scaleY(1);
+    transform: rotateZ(-360deg) scaleX(1) scaleY(1); } }
+@keyframes rotarIz {
+  0% {
+    -webkit-transform: rotateZ(0deg) scaleX(1) scaleY(1);
+    transform: rotateZ(0deg) scaleX(1) scaleY(1); }
+  50% {
+    -webkit-transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);
+    transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85); }
+  100% {
+    -webkit-transform: rotateZ(-360deg) scaleX(1) scaleY(1);
+    transform: rotateZ(-360deg) scaleX(1) scaleY(1); } }
+
+/*# sourceMappingURL=styles.css.map */
