@@ -96,9 +96,27 @@ nav {
 	height: 150px;;
 }
 
+#spacer1-hide {
+  height: 150px;;
+}
+
 #spacer2 {
   height: 30px;;
 }
+
+#spacer2-hide {
+  display: none;
+  height: 30px;;
+}
+
+h1 {
+    background: -webkit-linear-gradient($orange, #333, $light-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 2em;
+    padding: 0.1em;
+  }
 
 //index page
 #index-description {
@@ -106,15 +124,9 @@ nav {
 	color: $orange;
 	position: absolute;
 
-
-	h1 {
-		background: -webkit-linear-gradient($orange, #333, $light-blue);
-	  -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
-		text-align: center;
-		font-size: 5.5em;
-		padding: 0.1em;
-	}
+  h1 {
+    font-size: 5.5em;
+  }
 
 	p {
 		background: -webkit-linear-gradient($orange, #333, $light-blue);
@@ -123,7 +135,13 @@ nav {
 		text-align: center;
 		font-size: 2em;		
 	}
+
+  #player, #player-title, #line2 {
+    display: none;
+  }
 }
+
+
 
 //about page
 .about-page, .nicholas, .projects {
@@ -132,6 +150,14 @@ nav {
 	padding-left: 50px;
 	margin-top: 2em;
 
+  .film-posters {
+    margin-top: 2.3em;;
+
+    img {
+      height: 260px;
+     padding: .2em;
+    }
+  }
 }
 
 //nicholas information
@@ -149,6 +175,10 @@ nav {
   ul li {
     list-style-type: none;
     display: inline-block;
+  }
+
+  h3 {
+    text-align: center;
   }
 }
 
@@ -190,7 +220,6 @@ nav {
 
   h1 {
     text-decoration: underline;
-    padding-bottom: 1em;
   }
 }
 
@@ -214,8 +243,14 @@ nav {
   h1 {
   	padding-top: 60px;
   	cursor: pointer;
+    font-size: 1em;
   }
 }
+
+.hoja:hover {
+  cursor: pointer;
+}
+
 .hoja:after, .hoja:before {
   content: "";
   border-radius: 100%;

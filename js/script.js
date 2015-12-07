@@ -39,7 +39,7 @@ $(document).ready(function() {
 	}
 	$('#theTable').append(table);
 
-	//clicking on hoja to access music
+	//clicking on hoja to access music player
 	$('.hoja').click(function() {
 		$('.listenFade').fadeOut(200)
 		$('.listen').text('loading');
@@ -51,8 +51,13 @@ $(document).ready(function() {
 		});
 		
 		setTimeout(function() {
-			$('.hoja').fadeOut(1000);
-		}, 2000)
+			$('.hoja').fadeOut(500);
+			$('#player').show(2500);
+			$('#player-title').show(2500);
+			$('#line2').show(2500);
+			$('#spacer1-hide').hide(2500);
+			$('#spacer2-hide').show(2500);
+		}, 1500);
 	});
 
 });
