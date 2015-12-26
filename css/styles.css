@@ -120,21 +120,11 @@ h1 {
   text-align: center; }
 
 .projects {
-  height: 650px;
-  overflow: scroll; }
-  .projects #theTable {
-    width: 97%;
-    margin-top: 1em; }
-  .projects .theHead {
-    text-decoration: underline; }
-  .projects .theData {
-    width: 300px;
-    padding-right: 1em;
-    padding-bottom: 0.7em; }
-    .projects .theData:nth-child(2) {
-      width: 150px; }
-    .projects .theData:nth-child(3) {
-      width: 150px; }
+  height: 650px; }
+  .projects #project-type {
+    float: right;
+    position: relative;
+    bottom: 15px; }
 
 .contact-page {
   text-align: center;

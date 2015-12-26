@@ -185,31 +185,34 @@ h1 {
 // projects page
 .projects {
   height: 650px;
-  overflow: scroll;
 
-  
-  #theTable {
-    width: 97%;
-    margin-top: 1em;
-  }  
-
-  .theHead {
-    text-decoration: underline;
+  #project-type {
+    float: right;
+    position: relative;
+    bottom: 15px;
   }
+  // #theTable {
+  //   width: 97%;
+  //   margin-top: 1em;
+  // }  
 
-  .theData {
-   width: 300px;
-   padding-right: 1em;
-   padding-bottom: 0.7em;
+  // .theHead {
+  //   text-decoration: underline;
+  // }
 
-   &:nth-child(2) {
-    width: 150px;
-   }
+  // .theData {
+  //  width: 300px;
+  //  padding-right: 1em;
+  //  padding-bottom: 0.7em;
 
-   &:nth-child(3) {
-    width: 150px;
-   }
-  }
+  //  &:nth-child(2) {
+  //   width: 150px;
+  //  }
+
+  //  &:nth-child(3) {
+  //   width: 150px;
+  //  }
+  // }
 }
 
 // contact page
