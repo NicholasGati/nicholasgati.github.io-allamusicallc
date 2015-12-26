@@ -2,11 +2,12 @@ $white: #FFFFFF;
 $light-blue: #68A3C2;
 $logo-cream: #CEA16A;
 $orange: #F58A2D; 
+$theFont: 'Poiret One';
 
 body {
 	margin: 0;
 	background-color: $white;
-	font-family: 'Poiret One';
+	font-family: $theFont;
 
   h1 {
     color: $light-blue;
@@ -189,7 +190,14 @@ h1 {
   #project-type {
     float: right;
     position: relative;
-    bottom: 15px;
+    bottom: 12px;
+  }
+
+  select {
+    font-family: $theFont;
+    border: 1px solid #ccc;
+    font-size: .9em;
+    color: $light-blue;
   }
   // #theTable {
   //   width: 97%;

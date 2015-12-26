@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: #FFFFFF;
-  font-family: 'Poiret One'; }
+  font-family: "Poiret One"; }
   body h1 {
     color: #68A3C2; }
 
@@ -124,7 +124,12 @@ h1 {
   .projects #project-type {
     float: right;
     position: relative;
-    bottom: 15px; }
+    bottom: 12px; }
+  .projects select {
+    font-family: "Poiret One";
+    border: 1px solid #ccc;
+    font-size: .9em;
+    color: #68A3C2; }
 
 .contact-page {
   text-align: center;
