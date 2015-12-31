@@ -40,6 +40,12 @@ var redraw = function(projects) {
 		.data(columns)
 		.enter()
 		.append('th')
+		.on("click", function(d) {
+			tbody.selectAll("tr")
+			.sort(function(a,b) {
+				return d3.ascending(a[d],b[d]);
+			});
+		})
 		.text(function(d) { return d;  });
 
 	var rows = tbody.selectAll('tr')
